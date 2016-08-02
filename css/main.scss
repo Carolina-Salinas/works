@@ -1,0 +1,139 @@
+$color_primario: #F4F4F4; 
+$color_secundario: #ffbc5e;
+$tipografia_titulos: "Courgette", sans-serif;
+$tipografia_content: "Arial", sans-serif; 
+$bordes_contenido: 0;
+$size_content: 16px;
+
+h1,h2,h3,h4{
+	font-family: $tipografia_titulos;
+	color: $color_secundario;
+}
+a{
+	font-family: $tipografia_content;
+	color: $color_primario;
+	font-size: $size_content;
+}
+p{
+	font-family: $tipografia_content;
+	color: $color_primario;
+	font-size: $size_content
+}
+
+// .nonebor{
+// 	padding-left: $bordes_contenido;
+// 	padding-right: $bordes_contenido;
+// }
+
+ * {
+  outline: 1px solid rgba(255, 0, 0, 0.3); }
+
+body{
+	background-color: #1C1821;/*agregar scss */
+}
+
+.logo img{
+  margin-top: 0;
+  width: 50%;
+  height: auto;
+}
+.dropdown-menu{
+	margin-top: -120px;
+}
+
+.menu a{
+  text-decoration: none;
+  padding: 5% 5%;
+  font-size: 1.5em;
+}
+.menu ul{ margin: 3%;}
+.menu ul li.active a,
+
+.cont-header{
+  background-color:#0e0e0e;
+  height: auto;
+}
+.hero_font{
+	background: url(../image/image2.jpg);
+	background-size: cover;
+	height: auto;
+	width:100%;
+	padding: 10%;
+	margin:30px 0 0 0;
+}
+.info_banner{
+	padding: 10%;
+	background: #0e0e0e;
+	height: auto;
+}
+.info_banner ul{padding: 2%;}
+/*important*/
+.thumbnail{
+	border: none;
+	padding: 0;
+}
+.caption{
+	background-color: #0e0e0e;
+}
+.content-section{
+	padding: 3%;
+}
+.video {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.form-control{
+	color: #fff;
+  	padding: 15px 30px;
+  	background: #696969;
+  	border: 1px solid #1C1821;
+  	border-radius: 5px;	
+  	margin: 20px auto;
+}
+.searcher{
+	padding: 15px 30px;
+	background-color: #0e0e0e;
+	border: 1px solid #1C1821;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.content-foot{
+	padding: 5%;
+	background-color: #0e0e0e;
+	height: auto;
+}
+.mediasocial{
+	font-size: 2em;
+	color: #F4F4F4;
+}
+.mediasocial li{
+	border-radius: 100%;
+	padding: 1% 2%;
+	background-color: #696969;
+}
+.iconos li{
+	border-radius: 100%;
+	background-color: #696969;
+	color: #F4F4F4;
+	font-size: 1.1em;
+	padding: 1% 2%;
+}
+.iconos ul{
+	padding: 3%;
+}
+
+@media(max-width: 600px){
+	.menu  li a{
+		display: none;
+	}
+	.info_banner li{
+		font-size: 10px;
+	}
+	.content-section{
+		padding-right:0;
+		padding-left:0;
+	}
+
+}
