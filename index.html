@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Carolina salinas</title>
+    <!-- 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>-->
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/font-awesome.css">
@@ -16,59 +17,55 @@
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/main.css">
 	<!-- javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
 	 <script src="js/wow.min.js"></script>
 	<script>new WOW().init();</script>
+    <script src="js/main.js"></script>
 
 </head>
-<body>
-            <!-- Logo -->
-            <a class="navbar-brand" href="#page-top">Carolina Salinas</a>
-        </div>
+<body data-spy="scroll" data-target=".navbar">
 
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="mainnav-navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="page-scroll">
-                    <a href="#introduction">Home</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#About">About me</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#portafolio">Portafolio</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#contact">Contacto</a>
-                </li>
+<!--BARRA DE INICIO-->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-center" href="index.html">Carolina Salinas</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right" id="menu">
+                <li class="active"><a href="#introduction">Portada</a></li>
+                <li><a href="#aboutme">Sobre mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contact">Contáctame</a></li>
             </ul>
         </div>
-        
     </div>
 </nav>
-<!-- / Navigation -->
 
 <!-- #Introduction -->
 <section id="introduction">
-    <div class="container ">
-        <div class="row">
-            <div class="col-lg-12">
-                <img class="img-responsive wow slideInLeft" src="" alt="">
-                <div class="intro-text">
-                    <div class="name wow fadeInRight">
-                    	<div class='content'>
-  							<div class='visible'>
-    							<p class="hello">Hola</p>
-    							<ul class="saludo">
-      								<li> mundo !</li>
-      								<li> Coders !</li>
-      								<li> Usuarios !</li>
-      								<li>Bienvenidos !</li>
-    							</ul>
-  							</div>
-						</div>
-                    </div>
-                 </div>
-        	</div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+            <div class="cuadrointro wow wow wobble">
+                <h1 class="font-effect-vintage text-center">Carolina K. Salinas</h1>
+                <h2 class="text-center">FRONT-END DEVELOPER<span>|</span></h2> 
+            </div>
+            </div>
         </div>
     </div>
 </section>
@@ -77,14 +74,14 @@
  <section id="aboutme">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 wow wow fadeInDown text-center">
-                <h2>About me</h2>
-                <p>Integrante de la segunda promocion Laboratoria sede Arequipa.Contadora de Profesion Coder por pasion.Mi meta es algun día formar mi propia empresa de tecnologia o informatica.
-</p>
+            <div class="col-md-8 wow wow fadeInDown text-left pull-right">
+                <h1 class="text-left">ABOUT ME</h1>
+                <p class="text-justify">Estudiante egresada de Univeridad Nacional de San Agustin mi carrera como Coder empezo en laboratoria una experiencia enriquecedora que me enseño a ser más autodidacta y emprender el mundo del codigo .Mi meta es algun día formar mi propia empresa con todo lo relacionado a la tecnologia.
+                </p>
             </div>
         </div>
         <div class="row">
-         <div class="col-lg-6 wow wow fadeInDown text-center">
+         <div class="col-md-5 wow wow fadeInDown text-center">
             <h3>Habilidades</h3>
                 <div class="progress progress-striped active">
                     <div class="progress-bar progress-bar-info" role="progressbar"
@@ -120,14 +117,19 @@
        style="width: 45%"> Wordpress
                 <span class="sr-only">80% completado</span>
                     </div>
-                </div>
-
-       
-                  
+                </div>         
         </div>
-          <div class="col-lg-6 wow fadeInDown text-center">
-                <h3> Otro conocimientos</h3>
-                <ul></ul>  
+         <div class="col-md-2 wow fadeInDown text-center">
+               
+        </div>
+        <div class="col-md-5 wow fadeInDown text-center ">
+            <h2 class="text-center"> Otros conocimientos</h2>
+            <ul class="list-unstyled text-justify">
+                <li><p>Gestion de Recursos Humanos: Cuento con estudios y experiencia en el área.</p></li>
+                <li><p>Balanced Scorecard: tema de investigacion en proceso de aplicacion de tesis.</p></li>
+                <li><p>Finanzas: Tuve la oportunidad de formar parte del equipo Comercial del sector Banca.</p></li>
+                <li><p>Nadadora Amateur: Grata experiencia, estuve a cargo de grupos de niños apoyando en la enseñanza de este completo deporte.</p></li>
+            </ul>  
         </div>
     </div>
 </section>
@@ -136,37 +138,62 @@
 <section id="portafolio">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 wow fadeInDown text-center">
-                <h2>Portafolio</h2>
+            <div class="col-md-12 wow fadeInDown text-center">
+                <h1>PORTAFOLIO</h1>
                 <p>Algunas de las cosas que hicee </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 portafolio-item">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
+                <div class="view view-tenth">
+                <img src="image/e-comunidad.png" />
+                    <div class="mask">
+                        <h2>E-comunidad</h2>
+                        <p>lorem lorem lorem</p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
+                <div class="view view-tenth">
+                <img src="image/escueladanza.png"/>
+                    <div class="mask">
+                        <h2>Escuela de Danza</h2>
+                        <p></p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
+                <div class="view view-tenth">
+                <img src="image/responsive-blog.png" />
+                    <div class="mask">
+                        <h2>Flatness</h2>
+                        <p>Responsive Blog</p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
+                <div class="view view-tenth">
+                <img src="image/cinema.png" />
+                    <div class="mask">
+                        <h2>Cinema XXI</h2>
+                        <p></p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
+                <div class="view view-tenth">
+                <img src="image/primes.png" />
+                    <div class="mask">
+                        <h2>Primes Theme</h2>
+                        <p></p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
+                <div class="view view-tenth">
+                <img src="image/adventuretime.png" />
+                    <div class="mask">
+                        <h2>Adventure Time</h2>
+                        <p>Responsive</p>
+                        <a href="#" class="info">Ver mas</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3 portafolio-item">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item wow zoomIn">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item wow zoomIn">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-3 portafolio-item wow zoomIn">
-                <img src="image/pc.jpg" class="img-responsive wow rotateIn" class="img-responsive" alt="">
-            </div>
-        </div>
+     
     </div>
 </section>
 <!-- / #Portfolio -->
@@ -175,9 +202,9 @@
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 wow fadeInDown text-center">
-                <h2>Contactame</h2>
-                <p>Únete a mí en mis redes sociales para todas las últimas actualizaciones y más.</p>
+            <div class="col-md-12 wow fadeInDown text-center">
+                <h1>Contactame</h1>
+                <p> Tienes algun proyecto...no dudes en contactarme</p>
                 <ul class="list-inline text-center">
                     <li>
                         <a href="#" class="btn-social btn-outline wow lightSpeedIn"><i class="fa fa-fw fa-facebook"></i></a>
@@ -203,9 +230,12 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-12">
-                Copyright &copy; Your Website 2016
+                Copyright &copy; Carolina Salinas 2016
             </div>
         </div>
     </div>
 </footer>
+    
+</body>
+</html>
  <!-- / Footer -->
